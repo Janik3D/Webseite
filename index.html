@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meine Webseite</title>
+  <title>Huber 3D Druck</title>
 
   <style>
     *{
@@ -23,7 +23,7 @@
       display:flex;
       justify-content:space-between;
       align-items:center;
-      padding:25px 10%;
+      padding:20px 10%;
       position:fixed;
       width:100%;
       top:0;
@@ -32,9 +32,33 @@
       z-index:1000;
     }
 
+    .logo-box{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
     .logo{
+      width:60px;
+      height:60px;
+      border-radius:15px;
+      background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+      display:flex;
+      justify-content:center;
+      align-items:center;
       font-size:28px;
       font-weight:bold;
+      color:#0f172a;
+      box-shadow:0 0 20px rgba(56,189,248,0.4);
+    }
+
+    .logo-text{
+      font-size:28px;
+      font-weight:bold;
+      color:white;
+    }
+
+    .logo-text span{
       color:#38bdf8;
     }
 
@@ -43,6 +67,7 @@
       text-decoration:none;
       margin-left:25px;
       transition:0.3s;
+      font-size:17px;
     }
 
     nav a:hover{
@@ -56,184 +81,4 @@
       align-items:center;
       text-align:center;
       padding:120px 20px;
-      background:
-      linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
-      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop');
-      background-size:cover;
-      background-position:center;
-    }
-
-    .hero-content{
-      max-width:800px;
-    }
-
-    .hero h1{
-      font-size:60px;
-      margin-bottom:20px;
-    }
-
-    .hero p{
-      font-size:22px;
-      line-height:1.6;
-      color:#cbd5e1;
-      margin-bottom:40px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:15px 35px;
-      background:#38bdf8;
-      color:#0f172a;
-      text-decoration:none;
-      border-radius:50px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      transform:scale(1.05);
-      background:white;
-    }
-
-    .section{
-      padding:100px 10%;
-    }
-
-    .section h2{
-      text-align:center;
-      font-size:40px;
-      margin-bottom:50px;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:#1e293b;
-      padding:30px;
-      border-radius:20px;
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-      background:#334155;
-    }
-
-    .card h3{
-      margin-bottom:15px;
-      color:#38bdf8;
-    }
-
-    footer{
-      text-align:center;
-      padding:40px;
-      background:#020617;
-      color:#94a3b8;
-    }
-
-    @media(max-width:768px){
-
-      .hero h1{
-        font-size:40px;
-      }
-
-      nav{
-        display:none;
-      }
-
-    }
-
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="logo">MEINE SEITE</div>
-
-    <nav>
-      <a href="#">Start</a>
-      <a href="#services">Services</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Willkommen auf meiner Webseite</h1>
-
-      <p>
-        Moderne kostenlose Webseite mit GitHub Pages.
-        Schnell, professionell und mobil optimiert.
-      </p>
-
-      <a href="#services" class="btn">Mehr erfahren</a>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-
-    <h2>Meine Services</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Webdesign</h3>
-        <p>
-          Moderne Webseiten für Unternehmen,
-          Portfolio oder persönliche Projekte.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Responsive Design</h3>
-        <p>
-          Optimiert für Handy, Tablet und Desktop.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Schnelles Hosting</h3>
-        <p>
-          Kostenlos online mit GitHub Pages.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="section" id="kontakt">
-
-    <h2>Kontakt</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Email</h3>
-        <p>deine@email.de</p>
-      </div>
-
-      <div class="card">
-        <h3>Instagram</h3>
-        <p>@deinname</p>
-      </div>
-
-      <div class="card">
-        <h3>Standort</h3>
-        <p>Deutschland</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <footer>
-    © 2026 Meine Webseite | Erstellt mit HTML & GitHub Pages
-  </footer>
-
-</body>
 </html>
